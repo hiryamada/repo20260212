@@ -3,7 +3,7 @@ GH-900講義デモ用!!
 
 ## 概要
 
-FastAPIを使用した「Hello World」を出力するシンプルなAPIサンプルプロジェクトです。
+FastAPIを使用した「現在時刻(UTC)」を出力するシンプルなAPIサンプルプロジェクトです。
 
 ## プロジェクト構成
 
@@ -60,12 +60,12 @@ pytest -v
 
 ### GET /
 
-Hello Worldメッセージを返します。
+現在時刻(UTC)をISO 8601形式で返します。
 
 **レスポンス例：**
 ```json
 {
-  "message": "Hello World"
+  "current_time": "2026-02-12T12:34:56.789012Z"
 }
 ```
 
